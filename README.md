@@ -1,6 +1,6 @@
 ---
 title: DotnetCore Redis Demo
-tags: dotnetCore , Redis
+tags: DotnetCore , Redis
 description: 使用Docker建置Redis結合DotnetCore API
 ---
 
@@ -42,7 +42,7 @@ PONG
 1. 建立ASP.Net Core Application專案
 2. 選擇範本類型為API
 3. 進階項目選擇啟用`Configure for HTTPS`與`Enable Docker Support`選擇*Linux*
-4. 專案剛建立好會先執行建立該專案Image與專案Contianer，過程中會出現提示需要分享資料夾視窗，請點選`Share It`務必要讓專案用到資料夾都有分享到
+4. 專案剛建立好會先執行建立該專案部署在Docker Image與Contianer，過程中會出現提示需要分享資料夾視窗，請點選`Share It`務必要讓專案用到資料夾都有分享到
 5. 在專案Nuget套件管理器內安裝`StackExchange.Redis`
 6. 在`Startup.cs`內`ConfigureServices`加入`Scoped` DI服務
 ```csharp=
