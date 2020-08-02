@@ -23,6 +23,7 @@ namespace DotNetCore_Redis_Demo.Controllers
             _database.StringSet("Author", "Lee");
         }
 
+        // https://localhost:32768/api/Cache?Key=Welcome
         // GET: api/Cache?key=key
         // Get 參數最好都要有宣告[FromQuery]去包住，要有明確定義參數類型
         /// <summary>

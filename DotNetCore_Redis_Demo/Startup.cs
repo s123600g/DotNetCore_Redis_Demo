@@ -23,7 +23,7 @@ namespace DotNetCore_Redis_Demo
 
             // 加入AddScoped-使用Redis作為暫存區塊
             //using StackExchange.Redis;
-            IConnectionMultiplexer redis = ConnectionMultiplexer.Connect("172.17.0.4");
+            IConnectionMultiplexer redis = ConnectionMultiplexer.Connect("172.17.0.2");
             services.AddScoped(s => redis.GetDatabase());
         }
 
