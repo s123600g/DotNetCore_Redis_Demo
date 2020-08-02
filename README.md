@@ -1,3 +1,9 @@
+---
+title: DotnetCore Redis Demo
+tags: dotnetCore , Redis
+description: 使用Docker建置Redis結合DotnetCore API
+---
+
 # DotNetCore_Redis_Demo
 dotnet core 3.1配合使用 Docker建置Redis練習筆記
 
@@ -61,5 +67,28 @@ docker inspect my-redis
 7. Controllers資料夾新增Controller-->API Controller (EMPTY)
 
 
+# 測試
+* GET
+```
+https://localhost:32768/api/Cache?Key=Welcome
+```
 
+```
+https://localhost:32768/api/Cache?Key=Author
+```
+
+* POST
+
+使用[Postman](https://www.postman.com/)
+```
+https://localhost:32768/api/Cache
+```
+
+raw(JSON)
+```json=
+{
+    "Key":"Hello",
+    "Value":"Hi"
+}
+```
 
